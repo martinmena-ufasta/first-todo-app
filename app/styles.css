@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #337dab;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.add-button {
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: none;
+    vertical-align: middle;
+    font-size: xx-large;
+    align-content: center;
+}
+.text_large {
+    font-size: 32px;
+}
+.text_small {
+    font-size: 24px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 42px;
+}
+.todohero_section {
+    border: 1px solid #c2b39a;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    width: 100%;
+    max-width: 455px;
+    padding: 12px;
+    border-radius: 11px;
+}
+.todohero_section div:last-child {
+    background-color: var(--primary-color);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.form {
+    align-self: center;
+    width: 97%;
+    max-width: 455px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 38px;
+}
+.form label {
+    width: 90%;
+}
+.form input {
+    background-color: #1f2937;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 11px;
+    padding: 12px;
+}
+.todo_list {
+    align-self: center;
+    width: 97%;
+    max-width: 455px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 27px;
+    margin-bottom: 27px;
+    gap: 27px;
+}
+.todo_item,
+.edit-form input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    max-width: 455px;
+    border: 1px solid #c2b39a;
+    font-size: 16px;
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 12px;
+}
+.edit-form input {
+    outline: transparent;
+    width: calc(100% - 14px);
+    height: calc(100% - 12px);
+    border: transparent;
+}
+.todo_items_left,
+.todo_items_right {
+    display: flex;
+    align-items: center;
+}
+.todo_items_left {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    gap: 12px;
+    font-size: 16px;
+}
+.todo_items_right {
+    gap: 4px;
+}
+.todo_items_right button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+.todo_items_right button svg {
+    fill: #c2b39a;
+}
+
+.check-box {
+    border: 2px solid var(--primary-color);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.filled {
+    background: #57a2d0;
+}
